@@ -20,7 +20,7 @@ def get_county_list_from_shapefile(shapefile_path):
     counties = gdf['NAME'].tolist()
     return counties
 
-# Define a function to convert a Matplotlib figure to a PhotoImage
+
 def plt_to_image(fig):
     buf = io.BytesIO()
     fig.savefig(buf, format='png')
