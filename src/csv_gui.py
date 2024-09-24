@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog, ttk
 import pandas as pd
 
-# Initialize a global variable to store the csv data
+
 csv_data = None
 
 def load_csv():
@@ -23,8 +23,6 @@ def plot_selected_row():
     if csv_data is not None:
         selected_label = selected_option.get()
         row_data = csv_data[csv_data['Label (Grouping)'] == selected_label]
-        # Here we would call the map visualization function with the selected row data
-        # For example: map_visualization.plot_county_data(row_data)
 
 # Create the main window
 root = tk.Tk()
