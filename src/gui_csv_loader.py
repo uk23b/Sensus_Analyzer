@@ -9,9 +9,6 @@ def load_file():
         try:
             df = pd.read_csv(filepath)
             label_file_explorer.configure(text="File Opened: " + filepath)
-            # Now you can use df as needed, for example:
-            # row_values = get_row_values_by_name(df, 'Your Row Name')
-            # print(row_values)
         except Exception as e:
             label_file_explorer.configure(text="Failed to open file: " + str(e))
 
